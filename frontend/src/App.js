@@ -20,7 +20,7 @@ function App() {
 
   console.log(CityCodes);
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&units=metric&appid=6a65e40acd32336b5a64c4f9bc27e0c2`
+  const url = `https://api.openweathermap.org/data/2.5/weather?id=${cityid}&units=metric&appid=${API_KEY}`
   const searchCityCode = (event) => {
     if (event.key === 'Enter') {
       axios.get(url).then((response) => {
